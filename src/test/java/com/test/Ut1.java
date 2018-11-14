@@ -31,4 +31,22 @@ public class Ut1 {
         Assert.assertTrue("检查点b", true);
     }
 
+    @Test
+    public void test4(){
+
+        Assert.assertTrue("检查点c", true);
+    }
+
+    @Test
+    public void test5(){
+
+        Assert.assertTrue("检查点d", true);
+    }
+
+    @Test
+    public void test6(){
+
+        Assert.assertTrue("检查点e", false);
+    }
+
 }
