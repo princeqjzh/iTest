@@ -49,4 +49,22 @@ public class Ut1 {
         Assert.assertTrue("检查点e", true);
     }
 
+    @Test
+    public void test7(){
+
+        Assert.assertTrue("检查点f", true);
+    }
+
+    @Test
+    public void test8(){
+
+        Assert.assertTrue("检查点g", true);
+    }
+
+    @Test
+    public void test9(){
+
+        Assert.assertTrue("检查点h", true);
+    }
+
 }
