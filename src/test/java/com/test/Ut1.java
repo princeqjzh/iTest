@@ -20,4 +20,15 @@ public class Ut1 {
         Assert.assertTrue("检查intAdd(a, b)函数返回值是否正确", c == r);
     }
 
+    @Test
+    public void test2(){
+        Assert.assertTrue("检查点a", true);
+    }
+
+    @Test
+    public void test3(){
+
+        Assert.assertTrue("检查点b", true);
+    }
+
 }
