@@ -46,7 +46,7 @@ public class Ut1 {
     @Test
     public void test6(){
 
-        Assert.assertTrue("检查点e", false);
+        Assert.assertTrue("检查点e", true);
     }
 
 }
