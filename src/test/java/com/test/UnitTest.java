@@ -35,7 +35,7 @@ public class UnitTest {
         int a = new Random().nextInt(1000);
         int b = new Random().nextInt(2000);
 
-        long c = a * b * 2;
+        long c = a * b;
         long r = new Demo1().intMultiply(a, b);
         Assert.assertTrue("檢查intMultiply(a, b)函数返回值是否正确", c == r);
     }
