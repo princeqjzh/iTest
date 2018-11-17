@@ -13,4 +13,9 @@ public class Demo1 {
         int r = a - b;
         return r;
     }
+
+    public long intMultiply(int a, int b){
+        long r = a * b;
+        return r;
+    }
 }

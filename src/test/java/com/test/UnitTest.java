@@ -30,5 +30,13 @@ public class UnitTest {
         Assert.assertTrue("檢查intSubtract(a, b)函数返回值是否正确", c == r);
     }
 
+    @Test
+    public void testMultiplyInt(){
+        int a = new Random().nextInt(1000);
+        int b = new Random().nextInt(2000);
 
+        long c = a * b * 2;
+        long r = new Demo1().intMultiply(a, b);
+        Assert.assertTrue("檢查intMultiply(a, b)函数返回值是否正确", c == r);
+    }
 }
