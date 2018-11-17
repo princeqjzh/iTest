@@ -40,13 +40,13 @@ public class Ut1 {
     @Test
     public void test5(){
 
-        Assert.assertTrue("检查点d", true);
+        Assert.assertTrue("检查点d", false);
     }
 
     @Test
     public void test6(){
 
-        Assert.assertTrue("检查点e", true);
+        Assert.assertTrue("检查点e", false);
     }
 
     @Test
