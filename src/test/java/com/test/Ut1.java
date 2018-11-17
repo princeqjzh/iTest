@@ -67,4 +67,10 @@ public class Ut1 {
         Assert.assertTrue("检查点h", true);
     }
 
+    @Test
+    public void test10(){
+
+        Assert.assertTrue("检查点g", true);
+    }
+
 }
