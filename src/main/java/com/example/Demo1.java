@@ -8,4 +8,9 @@ public class Demo1 {
         int r = a + b;
         return r;
     }
+
+    public int intSubtract(int a, int b){
+        int r = a - b;
+        return r;
+    }
 }
