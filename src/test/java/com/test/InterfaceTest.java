@@ -22,7 +22,7 @@ public class InterfaceTest {
         String responseString = RequestClient.doGet(requestUrl);
         JSONObject jsonObject = JSONObject.fromObject(responseString);
         String urlObj = (String)jsonObject.get("url");
-        String verifyUrl = "https" + "://" + url + "?" + key1 + "=" + value1 + "&" + key2 + "=" + value2;
+        String verifyUrl = "http" + "://" + url + "?" + key1 + "=" + value1 + "&" + key2 + "=" + value2;
         Assert.assertTrue("Check URL object", urlObj.contains(verifyUrl));
     }
 }
