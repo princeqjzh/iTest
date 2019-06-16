@@ -9,7 +9,7 @@ public class InterfaceTest {
     /**
      * 检查返回值参数接口测试
      */
-    @Test
+//    @Test
     public void checkURLParams(){
         String protocal = "http";
         String url = "httpbin.org/get";
