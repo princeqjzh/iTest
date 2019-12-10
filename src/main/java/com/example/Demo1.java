@@ -10,7 +10,7 @@ public class Demo1 {
     }
 
     public int intSubtract(int a, int b){
-        int r = a - b - 1;
+        int r = a - b;
         return r;
     }
 
