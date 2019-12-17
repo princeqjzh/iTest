@@ -15,7 +15,7 @@ public class Demo1 {
     }
 
     public long intMultiply(int a, int b){
-        long r = a * b + 1;
+        long r = a * b;
         return r;
     }
 }
