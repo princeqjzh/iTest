@@ -1,3 +1,3 @@
 ##测试演示工程
 
-JUnit Test
+JUnit Test for java code
