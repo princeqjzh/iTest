@@ -49,4 +49,10 @@ public class UnitTest {
         long r = new Demo1().intMultiply(a, b);
         Assert.assertTrue("檢查intMultiply(a, b)函数返回值是否正确", c == r);
     }
+
+    @Test
+    public void testStringLeng() throws Exception{
+        int lenResult = new Demo1().countlength("12345678901");
+        Assert.assertTrue("Test leng", lenResult == 11);
+    }
 }

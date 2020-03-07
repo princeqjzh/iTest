@@ -23,4 +23,12 @@ public class Demo1 {
         int r = a - b;
         return r;
     }
+
+    public int countlength(String str) throws Exception{
+        int leng = str.length();
+        if(leng > 10){
+            throw new Exception("Leng error");
+        }
+        return leng;
+    }
 }
