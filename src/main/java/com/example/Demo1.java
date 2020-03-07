@@ -24,10 +24,10 @@ public class Demo1 {
         return r;
     }
 
-    public int countlength(String str) throws Exception{
+    public int countlength(String str) {
         int leng = str.length();
         if(leng > 10){
-            throw new Exception("Leng error");
+            return -1;
         }
         return leng;
     }

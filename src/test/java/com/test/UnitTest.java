@@ -53,6 +53,6 @@ public class UnitTest {
     @Test
     public void testStringLeng() throws Exception{
         int lenResult = new Demo1().countlength("12345678901");
-        Assert.assertTrue("Test leng", lenResult == 11);
+        Assert.assertFalse("Test leng", lenResult == 11);
     }
 }
