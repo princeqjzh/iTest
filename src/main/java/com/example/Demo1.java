@@ -18,4 +18,9 @@ public class Demo1 {
         long r = a * b;
         return r;
     }
+
+    public int intSubtract2(int a, int b){
+        int r = a - b;
+        return r;
+    }
 }

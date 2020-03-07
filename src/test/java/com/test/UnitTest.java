@@ -31,6 +31,16 @@ public class UnitTest {
     }
 
     @Test
+    public void testSubtractInt2(){
+        int a = new Random().nextInt(1000);
+        int b = new Random().nextInt(2000);
+
+        int c = a - b;
+        int r = new Demo1().intSubtract2(a, b);
+        Assert.assertTrue("檢查intSubtract2(a, b)函数返回值是否正确", c == r);
+    }
+
+    @Test
     public void testMultiplyInt(){
         int a = new Random().nextInt(1000);
         int b = new Random().nextInt(2000);
