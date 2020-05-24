@@ -5,7 +5,7 @@ package com.example;
  */
 public class Demo1 {
     public int intAdd(int a, int b){
-        int r = a + b + 2;
+        int r = a + b;
         return r;
     }
 
