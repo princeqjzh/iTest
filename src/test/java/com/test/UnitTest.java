@@ -1,8 +1,8 @@
 package com.test;
 
 import com.example.Demo1;
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 import java.util.Random;
 
@@ -17,7 +17,7 @@ public class UnitTest {
 
         int c = a + b;
         int r = new Demo1().intAdd(a, b);
-        Assert.assertTrue("检查intAdd(a, b)函数返回值是否正确", c == r);
+        Assertions.assertEquals(c, r,"函数intAdd(a, b)实际返回值：" + r + ", 期望值：" + c);
     }
 
     @Test
@@ -27,7 +27,7 @@ public class UnitTest {
 
         int c = a - b;
         int r = new Demo1().intSubtract(a, b);
-        Assert.assertTrue("檢查intSubtract(a, b)函数返回值是否正确", c == r);
+        Assertions.assertEquals(c, r, "函数intSubtract(a, b)实际返回值：" + r + ", 期望值：" + c);
     }
 
     @Test
@@ -37,7 +37,7 @@ public class UnitTest {
 
         int c = a - b;
         int r = new Demo1().intSubtract2(a, b);
-        Assert.assertTrue("檢查intSubtract2(a, b)函数返回值是否正确", c == r);
+        Assertions.assertEquals(c, r, "函数intSubtract2(a, b)实际返回值：" + r + ", 期望值：" + c);
     }
 
     @Test
@@ -47,12 +47,14 @@ public class UnitTest {
 
         long c = a * b;
         long r = new Demo1().intMultiply(a, b);
-        Assert.assertTrue("檢查intMultiply(a, b)函数返回值是否正确", c == r);
+        Assertions.assertEquals(c, r, "函数intMultiply(a, b)实际返回值：" + r + ", 期望值：" + c);
     }
 
     @Test
     public void testStringLeng() throws Exception{
-        int lenResult = new Demo1().countlength("12345678901");
-        Assert.assertFalse("Test leng", lenResult == 11);
+        String str = "1234567890";
+        int actLen = new Demo1().countlength(str);
+        int expLen = str.length();
+        Assertions.assertEquals(expLen, actLen, "函数countlength(l)实际返回值：" + actLen + ", 期望值：" + expLen);
     }
 }
