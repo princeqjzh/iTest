@@ -5,11 +5,14 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
 import java.util.Random;
+import org.apache.log4j.Logger;
 
 /**
  * Created by jizhi.qian on 2018/11/14.
  */
 public class UnitTest {
+    private Logger logger = Logger.getLogger(UnitTest.class);
+
     @Test
     public void testAddInt(){
         int a = new Random().nextInt(1000);
@@ -17,6 +20,7 @@ public class UnitTest {
 
         int c = a + b;
         int r = new Demo1().intAdd(a, b);
+        logger.info("函数intAdd(a, b)实际返回值：" + r + ", 期望值：" + c);
         Assertions.assertEquals(c, r,"函数intAdd(a, b)实际返回值：" + r + ", 期望值：" + c);
     }
 
@@ -27,6 +31,7 @@ public class UnitTest {
 
         int c = a - b;
         int r = new Demo1().intSubtract(a, b);
+        logger.info("函数intSubtract(a, b)实际返回值：" + r + ", 期望值：" + c);
         Assertions.assertEquals(c, r, "函数intSubtract(a, b)实际返回值：" + r + ", 期望值：" + c);
     }
 
@@ -37,6 +42,7 @@ public class UnitTest {
 
         int c = a - b;
         int r = new Demo1().intSubtract2(a, b);
+        logger.info("函数intSubtract2(a, b)实际返回值：" + r + ", 期望值：" + c);
         Assertions.assertEquals(c, r, "函数intSubtract2(a, b)实际返回值：" + r + ", 期望值：" + c);
     }
 
@@ -47,6 +53,7 @@ public class UnitTest {
 
         long c = a * b;
         long r = new Demo1().intMultiply(a, b);
+        logger.info("函数intMultiply(a, b)实际返回值：" + r + ", 期望值：" + c);
         Assertions.assertEquals(c, r, "函数intMultiply(a, b)实际返回值：" + r + ", 期望值：" + c);
     }
 
@@ -55,6 +62,7 @@ public class UnitTest {
         String str = "1234567890";
         int actLen = new Demo1().countlength(str);
         int expLen = str.length();
+        logger.info("函数countlength(l)实际返回值：" + actLen + ", 期望值：" + expLen);
         Assertions.assertEquals(expLen, actLen, "函数countlength(l)实际返回值：" + actLen + ", 期望值：" + expLen);
     }
 }
