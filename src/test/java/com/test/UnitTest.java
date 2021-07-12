@@ -65,13 +65,4 @@ public class UnitTest {
         logger.info("函数countlength(l)实际返回值：" + actLen + ", 期望值：" + expLen);
         Assertions.assertEquals(expLen, actLen, "函数countlength(l)实际返回值：" + actLen + ", 期望值：" + expLen);
     }
-
-    @Test
-    public void testStringLeng2(){
-        String str = "123456789012";
-        int actLen = new Demo1().countlength(str);
-        int expLen = -1;
-        logger.info("函数countlength(l)实际返回值：" + actLen + ", 期望值：" + expLen);
-        Assertions.assertEquals(expLen, actLen, "函数countlength(l)实际返回值：" + actLen + ", 期望值：" + expLen);
-    }
 }
