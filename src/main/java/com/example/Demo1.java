@@ -15,16 +15,26 @@ public class Demo1 {
     }
 
     public long intMultiply(int a, int b){
-        long r = a * b;
+        long r = 0;
+        try {
+            r = a * b;
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
         return r;
     }
 
-    public int intSubtract2(int a, int b) throws Exception {
-        int r = a - b;
+    public int intSubtract2(int a, int b) {
+        int r = 0;
+        try {
+            r = a - b;
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
         return r;
     }
 
-    public int countlength(String str) throws Exception {
+    public int countlength(String str) {
         int leng = str.length();
         if(leng > 10){
             return -1;
