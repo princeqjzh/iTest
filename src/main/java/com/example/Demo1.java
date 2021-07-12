@@ -15,7 +15,12 @@ public class Demo1 {
     }
 
     public long intMultiply(int a, int b){
-        long r = a * b;
+        long r = 0;
+        try {
+            r = a * b;
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
         return r;
     }
 
