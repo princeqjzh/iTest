@@ -19,12 +19,12 @@ public class Demo1 {
         return r;
     }
 
-    public int intSubtract2(int a, int b){
+    public int intSubtract2(int a, int b) throws Exception {
         int r = a - b;
         return r;
     }
 
-    public int countlength(String str) {
+    public int countlength(String str) throws Exception {
         int leng = str.length();
         if(leng > 10){
             return -1;
