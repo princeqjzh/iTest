@@ -46,16 +46,16 @@ public class UnitTest {
         Assertions.assertEquals(c, r, "函数intSubtract2(a, b)实际返回值：" + r + ", 期望值：" + c);
     }
 
-//    @Test
-//    public void testMultiplyInt(){
-//        int a = new Random().nextInt(1000);
-//        int b = new Random().nextInt(2000);
-//
-//        long c = a * b;
-//        long r = new Demo1().intMultiply(a, b);
-//        logger.info("函数intMultiply(a, b)实际返回值：" + r + ", 期望值：" + c);
-//        Assertions.assertEquals(c, r, "函数intMultiply(a, b)实际返回值：" + r + ", 期望值：" + c);
-//    }
+    @Test
+    public void testMultiplyInt(){
+        int a = new Random().nextInt(1000);
+        int b = new Random().nextInt(2000);
+
+        long c = a * b;
+        long r = new Demo1().intMultiply(a, b);
+        logger.info("函数intMultiply(a, b)实际返回值：" + r + ", 期望值：" + c);
+        Assertions.assertEquals(c, r, "函数intMultiply(a, b)实际返回值：" + r + ", 期望值：" + c);
+    }
 //
 //    @Test
 //    public void testStringLeng(){
