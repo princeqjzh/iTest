@@ -1,0 +1,36 @@
+pipeline {
+    agent {
+        node {
+            label 'master'
+        }
+    }
+    stages {
+        stage('同步代码') {
+            steps {
+                git url: 'https://github.com/princeqjzh/iTest.git'
+            }
+        }
+        stage('代码分析') {
+            steps {
+                withSonarQubeEnv('SonarQube') {
+                    sh "mvn clean verify sonar:sonar"
+                }
+            }
+        }
+        stage("质量门禁检查") {
+            steps {
+                waitForQualityGate abortPipeline: true
+            }
+        }
+        stage("产品打包") {
+            steps {
+                sh "mvn clean package"
+            }
+        }
+        stage("jar包输出") {
+            steps {
+                archiveArtifacts artifacts: 'target/UT_Sample.jar'
+            }
+        }
+    }
+}
