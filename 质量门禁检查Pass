@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('同步代码') {
             steps {
-                git url: 'https://github.com/princeqjzh/iTest.git'
+                git url: 'https://gitee.com/11547299/itest.git'
             }
         }
         stage('代码分析') {
