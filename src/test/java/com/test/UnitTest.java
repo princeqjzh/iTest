@@ -7,9 +7,7 @@ import org.junit.jupiter.api.Assertions;
 import java.util.Random;
 import org.apache.log4j.Logger;
 
-/**
- * Created by jizhi.qian on 2018/11/14.
- */
+
 public class UnitTest {
     private Logger logger = Logger.getLogger(UnitTest.class);
 
